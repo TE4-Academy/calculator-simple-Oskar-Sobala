@@ -36,45 +36,37 @@ h1 {
 .buttons {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 5px;
-    /* Väldigt liten gap - du kanske vill ändra? */
+    gap: 10px;
     margin-bottom: 20px;
 }
 
 /* Alla knappar - har några problem som du behöver fixa! */
 button {
-    padding: 5px;
-    /* För liten padding? */
-    font-size: 12px;
-    /* För liten text? */
-    border: 2px solid black;
-    /* Ful ram? */
-    border-radius: 0px;
-    /* Inga rundade hörn? */
+    padding: 20px;       
+    font-size: 18px;     
+    border: none;         
+    border-radius: 5px;   
     cursor: pointer;
-    /* Ingen bakgrundsfärg? Knapparna ser konstiga ut! */
+}   
+.number {
+    background-color: #e0e0e0;  /* Ljusgrå */
+    color: #333;                /* Mörk text */
 }
 
-/* TODO: Knapparna behöver färger! */
-/* Här behöver du lägga till CSS för olika typer av knappar */
+.operator {
+    background-color: #ff9500;  /* Orange */
+    color: white;
+}
 
-/* Exempel för nummer-knappar: */
-/* .number { */
-/*     background-color: ? */
-/*     color: ? */
-/* } */
+.equals {
+    background-color: #ff9500;  /* Orange */
+    color: white;
+}
 
-/* Exempel för operator-knappar: */
-/* .operator { */
-/*     background-color: ? */
-/*     color: ? */
-/* } */
-
-/* Exempel för equals-knapp: */
-/* .equals { */
-/*     background-color: ? */
-/*     color: ? */
-/* } */
+.clear {
+    background-color: #a6a6a6;
+    color: white;
+}
 
 /* Debug-område */
 .debug {
